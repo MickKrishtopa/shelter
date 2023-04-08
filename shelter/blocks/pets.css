@@ -1,3 +1,29 @@
+@keyframes move-left {
+  form {
+    left: -1080px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes move-right {
+  form {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+
+.animation-move-left {
+  animation: move-left 1s;
+}
+
+.animation-move-right {
+  animation: move-right 1s;
+}
+
 .pets {
   padding: 80px 40px 100px;
   display: flex;
@@ -20,6 +46,7 @@
 }
 
 .pets__button {
+  cursor: pointer;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -43,6 +70,7 @@
 }
 
 .slider__button-left {
+  cursor: pointer;
   padding: 0;
   width: 52px;
   height: 52px;
@@ -55,6 +83,7 @@
   margin: 0 53px 0 0;
 }
 .slider__button-right {
+  cursor: pointer;
   padding: 0;
   width: 52px;
   height: 52px;
@@ -76,13 +105,14 @@
 .courusel {
   display: flex;
   position: relative;
-  left: -990px;
+  left: -1080px;
 }
 
 .slider__cards-grid-area {
   width: 990px;
   list-style: none;
   margin: 0;
+  margin-right: 90px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 270px));
@@ -126,6 +156,15 @@
 }
 
 @media screen and (max-width: 1279px) {
+  @keyframes move-right {
+    form {
+      left: -620px;
+    }
+    to {
+      left: -1240px;
+    }
+  }
+
   .pets {
     padding: 80px 30px 100px;
   }
@@ -135,12 +174,13 @@
   }
 
   .courusel {
-    left: -580px;
+    left: -620px;
   }
 
   .slider__cards-grid-area {
     column-gap: 40px;
     width: 580px;
+    margin-right: 40px;
   }
 
   .card:nth-last-child(3) {
@@ -156,6 +196,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  @keyframes move-right {
+    form {
+      left: -270px;
+    }
+    to {
+      left: -540px;
+    }
+  }
   .card:nth-last-child(2) {
     display: none;
   }
@@ -177,6 +225,7 @@
   }
   .slider__cards-grid-area {
     width: 270px;
+    margin-right: 0;
   }
 
   .pets__title {
