@@ -1,11 +1,33 @@
 import "../pages/style.css";
 import petsList from "../constants/petsList.js";
 
+const PAGE = document.querySelector(".pages");
 const sliderButtonLeft = document.querySelector(".slider__button-left");
 const sliderButtonRight = document.querySelector(".slider__button-right");
 const couruselElement = document.querySelector(".courusel");
 const leftCardsElement = document.querySelector(".slider__cards-left");
 const rightCardsElement = document.querySelector(".slider__cards-right");
+const headerMenuButton = document.querySelector(".header__navigation-button");
+const burgerMenuElement = document.querySelector(".header__menu");
+
+function openHeaderMenu() {
+  PAGE.classList.toggle("pages_no-scroll");
+  burgerMenuElement.classList.toggle("header__menu_open");
+  headerMenuButton.classList.toggle("header__navigation-button-active");
+
+  document.addEventListener("click", (evt) => {
+    if (evt.target !== evt.currentTarget) {
+      PAGE.classList.remove("pages_no-scroll");
+      burgerMenuElement.classList.remove("header__menu_open");
+      headerMenuButton.classList.remove("header__navigation-button-active");
+    }
+  });
+}
+
+headerMenuButton.addEventListener("click", (event) => {
+  event.stopPropagation();
+  openHeaderMenu();
+});
 
 function createCardElement(data) {
   const ind = Math.floor(Math.random() * 8);

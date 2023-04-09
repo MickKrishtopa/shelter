@@ -140,6 +140,7 @@
 }
 
 .card__button {
+  cursor: pointer;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;

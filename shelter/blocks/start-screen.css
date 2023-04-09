@@ -36,6 +36,7 @@
 }
 
 .start-screen__button {
+  cursor: pointer;
   border: none;
   width: 207px;
   height: 52px;
