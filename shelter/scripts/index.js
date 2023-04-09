@@ -8,7 +8,7 @@ const leftCardsElement = document.querySelector(".slider__cards-left");
 const rightCardsElement = document.querySelector(".slider__cards-right");
 
 function createCardElement(data) {
-  const ind = Math.floor(Math.random() * 12);
+  const ind = Math.floor(Math.random() * 8);
   const cardElement = document
     .querySelector(".card-template")
     .content.querySelector(".card")
