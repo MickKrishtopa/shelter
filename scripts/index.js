@@ -1,7 +1,7 @@
 console.log('JS is working');
 const test = 'test';
 
-console.log('ТЕСТ');
+console.log('TEST');
 
 import '../pages/style.css';
 import petsList from '../constants/petsList.js';
@@ -29,7 +29,6 @@ function openHeaderMenu() {
   });
 }
 
-console.log(123);
 headerMenuButton.addEventListener('click', (event) => {
   event.stopPropagation();
   openHeaderMenu();
