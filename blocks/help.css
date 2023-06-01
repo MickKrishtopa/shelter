@@ -74,9 +74,9 @@
   }
 
   .help__element {
-    width: 160px;
+    width: 130px;
   }
   .help__container {
-    justify-content: start;
+    justify-content: center;
   }
 }
