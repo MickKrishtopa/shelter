@@ -1,8 +1,3 @@
-console.log('JS is working');
-const test = 'test';
-
-console.log('TEST');
-
 import '../pages/style.css';
 import petsList from '../constants/petsList.js';
 
@@ -89,5 +84,3 @@ couruselElement.addEventListener('animationend', (animationEvent) => {
   sliderButtonRight.addEventListener('click', moveRight);
   sliderButtonLeft.addEventListener('click', moveLeft);
 });
-
-export default test;
