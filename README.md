@@ -1,20 +1,15 @@
 # Проект shelter
 
-Предназначен для практики HTML, CSS и JavaScript. Доступен по (ссылке)[https://mickkrishtopa.github.io/shelter/]
+Предназначен для практики HTML, CSS и JavaScript. Доступен по [ссылке](https://mickkrishtopa.github.io/shelter/)
 
 ## Используемый стек:
 
-- ### HTML
-  - Семантическая разметка
-  - Keyframes и API Youtube
-  - Методология БЭМ
-- ### CSS
-  - Флексбокс
-  - Скроссбраузерность
-- ### JavaScript
-  - Интерактивность элементов
+- HTML
+- CSS
+- JavaScript
+- Webpack
 
-## В Плнах доработки:
+## В планах доработки:
 
 - Дополнительные страницы
-- Пагинация
+- Модальные окна для карточек
