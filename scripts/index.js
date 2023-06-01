@@ -1,4 +1,7 @@
 console.log('JS is working');
+const test = 'test';
+export default test;
+console.log('ТЕСТ');
 
 import '../pages/style.css';
 import petsList from '../constants/petsList.js';
