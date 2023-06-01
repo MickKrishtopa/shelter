@@ -1,7 +1,7 @@
+console.log('JS is working');
+
 import '../pages/style.css';
 import petsList from '../constants/petsList.js';
-
-console.log('JS is working');
 
 const PAGE = document.querySelector('.pages');
 const sliderButtonLeft = document.querySelector('.slider__button-left');
