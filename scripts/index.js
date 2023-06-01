@@ -1,6 +1,6 @@
 console.log('JS is working');
 const test = 'test';
-export default test;
+
 console.log('ТЕСТ');
 
 import '../pages/style.css';
@@ -90,3 +90,5 @@ couruselElement.addEventListener('animationend', (animationEvent) => {
   sliderButtonRight.addEventListener('click', moveRight);
   sliderButtonLeft.addEventListener('click', moveLeft);
 });
+
+export default test;
